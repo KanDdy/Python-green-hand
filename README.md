@@ -1,4 +1,4 @@
-#Python的encode与decode编码
+# Python的encode与decode编码
 
 计算机里面，编码方法有很多种，英文的一般用ascii,而中文有unicode，utf-8,gbk,utf-16等等
 
@@ -7,7 +7,7 @@ unicode是 utf-8,gbk,utf-16这些的父编码，这些子编码都能转换成un
 字符串在Python内部的表示是unicode编码，因此，在做编码转换时，通常需要以unicode作为中间编码，即先将其他编码的字符串解码(decode)成unicode，再从unicode编码(encode)成另一种编码。
 
 Python中有两个方法用来解码(decode)与编码(encode)，**解码是子编码转unicode，编码就是unicode转子编码**
-##1.编码
+## 1.编码
 
 ```
 #encoding=utf-8
@@ -27,7 +27,7 @@ print c.encode('gbk')
 ```
 因为控制台是utf-8编码，所以unicode编码和utf8编码都能识别，但是gbk就不可以了
 
-##2解码
+## 2.解码
 
 ```
 #encoding=utf-8
